@@ -87,3 +87,93 @@ header {
   font-size: 1em;
   color: #fff;
 }
+
+@media only screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  header {
+    display: none;
+  }
+  .parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 41vh;
+  }
+
+  #text {
+    top: 45%;
+    position: absolute;
+    font-size: 2.2em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  #plant {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  #hill1,
+  #hill2,
+  #hill3,
+  #hill4,
+  #hill5,
+  #tree {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    scale: 2;
+  }
+
+  #hill5 {
+    transform: translateX(-50px);
+  }
+
+  #leaf {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    scale: 2;
+    transform: translateX(-90px);
+  }
+
+  .sec {
+    position: relative;
+    background: #003329;
+    margin: 86px 0;
+  }
+  .sec h2 {
+    font-size: 2.2em;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .sec p {
+    font-size: 1em;
+    color: #fff;
+  }
+}
+@media only screen and (width: 412px) {
+  .sec {
+    position: relative;
+    background: #003329;
+    margin: 69px 0;
+  }
+}
+
+@media only screen and (width: 414px) {
+  .sec {
+    position: relative;
+    background: #003329;
+    margin: 76px 0;
+  }
+}
